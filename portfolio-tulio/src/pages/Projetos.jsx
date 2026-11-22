@@ -62,7 +62,7 @@ export default function Projetos() {
           Linha do Tempo de <span className="text-pride-mint">Projetos</span>
         </h1>
         <p className="text-gray-400 max-w-2xl">
-          Retrospectiva cronológica dos sistemas e aplicações desenvolvidos ao longo da minha trajetória acadêmica na PUC Minas.
+          Esta é uma seleção de alguns dos principais projetos acadêmicos e práticos que desenvolvi ao longo da minha trajetória na PUC Minas, organizados em ordem cronológica.
         </p>
       </div>
 
