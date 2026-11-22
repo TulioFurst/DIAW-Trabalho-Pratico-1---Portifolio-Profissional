@@ -7,7 +7,7 @@
   <tr>
     <td width="800px">
       <div align="justify">
-        Este <b>README.md</b> documenta o desenvolvimento do meu <b>Portfólio Profissional (Tui.dev)</b>, projetado para a disciplina de <i>Desenvolvimento e Integração de Aplicações Web</i> do curso de <b>Engenharia de Software da PUC Minas</b>, sob orientação do <a href="https://github.com/joaopauloaramuni">Prof. Dr. João Paulo Aramuni</a>. A aplicação foi construída com foco em <i>responsividade</i>, <i>identidade visual autoral</i> (inspirada na estética de palco, estúdio e código) e <i>experiência do usuário (UX)</i>, reunindo apresentação bilíngue (PT/EN), interação cênica de cortinas, linha do tempo dinâmica de projetos, histórico acadêmico e formulário de contato funcional hospedado em nuvem.
+        Este <b>README.md</b> documenta o desenvolvimento do meu <b>Portfólio Profissional (Tui.dev)</b>, projetado para a disciplina de <i>Desenvolvimento e Integração de Aplicações Web</i> do curso de <b>Engenharia de Software da PUC Minas</b>, sob orientação do <b>Prof. Rommel Vieira Carneiro</b>. A aplicação foi construída com foco em <i>responsividade</i>, <i>identidade visual autoral</i> (inspirada na estética de palco, estúdio e código) e <i>experiência do usuário (UX)</i>, reunindo apresentação bilíngue (PT/EN), interação cênica de cortinas, linha do tempo dinâmica de projetos, histórico acadêmico e formulário de contato funcional hospedado em nuvem.
       </div>
     </td>
     <td>
@@ -122,13 +122,45 @@ Certifique-se de ter instalado em sua máquina:
 ```bash
 git clone [https://github.com/TulioFurst/DIAW-Trabalho-Pratico-1---Portifolio-Profissional.git](https://github.com/TulioFurst/DIAW-Trabalho-Pratico-1---Portifolio-Profissional.git)
 cd DIAW-Trabalho-Pratico-1---Portifolio-Profissional/portfolio-tulio
-Instale as Dependências do Projeto:Bashnpm install
-⚡ Como Executar a AplicaçãoInicie o servidor de desenvolvimento local do Vite:Bashnpm run dev
-🎨 A aplicação estará disponível no navegador em http://localhost:5173.🚀 DeployO deploy da aplicação está configurado de forma contínua na Vercel, conectada diretamente à branch main deste repositório (com Root Directory apontando para portfolio-tulio):Build de Produção:Bashnpm run build
-(Gera a pasta /dist otimizada com os arquivos estáticos prontos para produção).Publicação: A cada push realizado na branch principal, a Vercel executa automaticamente o build e atualiza a versão online em portfolio-tuliovercelapp.vercel.app.📂 Estrutura de PastasPlaintext.
+```
+
+2. **Instale as Dependências do Projeto:**
+```bash
+npm install
+```
+
+### ⚡ Como Executar a Aplicação
+
+Inicie o servidor de desenvolvimento local do Vite:
+```bash
+npm run dev
+```
+🎨 *A aplicação estará disponível no navegador em **http://localhost:5173**.*
+
+---
+
+## 🚀 Deploy
+
+O deploy da aplicação está configurado de forma contínua na **Vercel**, conectada diretamente à branch `main` deste repositório (com Root Directory apontando para `portfolio-tulio`):
+
+1. **Build de Produção:**
+```bash
+npm run build
+```
+*(Gera a pasta `/dist` otimizada com os arquivos estáticos prontos para produção).*
+
+2. **Publicação:** A cada `push` realizado na branch principal, a Vercel executa automaticamente o build e atualiza a versão online em [portfolio-tuliovercelapp.vercel.app](https://portfolio-tuliovercelapp.vercel.app/).
+
+---
+
+## 📂 Estrutura de Pastas
+
+```text
+.
 ├── README.md                            # 📘 Documentação principal do projeto
 └── portfolio-tulio/                     # 📁 Aplicação Front-end (React + Vite)
     ├── public/                          # 📂 Arquivos estáticos públicos
+    │   ├── prints/                      # 🖼️ Capturas de tela do portfólio para o README
     │   ├── projects/                    # 🖼️ Capturas de tela dos projetos exibidos
     │   │   ├── print01.png              # 📸 Tela inicial do CineSearch
     │   │   ├── print02.png              # 📸 Painel do Alvorecer Digital
@@ -152,4 +184,51 @@ Instale as Dependências do Projeto:Bashnpm install
     ├── postcss.config.js                # ⚙️ Configuração do PostCSS
     ├── tailwind.config.js               # 🎨 Configuração de tema e paleta de cores do Tailwind
     └── vite.config.js                   # ⚡ Configuração do Vite
-🎥 Demonstração🌐 Aplicação WebAbaixo estão as capturas de tela das principais seções do portfólio em funcionamento:PáginaCaptura de TelaSobre Mim (PT/EN & Cortina Cênica)Linha do Tempo de ProjetosExperiências & TrajetóriaContato & Formulário🔗 Documentações Utilizadas📖 React: Documentação Oficial do React📖 Vite: Guia de Configuração do Vite📖 Tailwind CSS: Documentação Oficial do Tailwind CSS📖 React Router: Documentação do React Router📖 Lucide Icons: Catálogo de Ícones Lucide👤 Autor👤 Nome:octocat: GitHub💼 LinkedIn📤 E-mailTúlio Furst Akar@TulioFurstLinkedIntakar@sga.pucminas.br🙏 AgradecimentosEngenharia de Software PUC Minas — Pelo suporte acadêmico e incentivo às boas práticas de desenvolvimento de software.Prof. Dr. João Paulo Aramuni — Pelas orientações na disciplina de Desenvolvimento e Integração de Aplicações Web e pelo template de documentação.📄 LicençaEste projeto é distribuído sob a Licença MIT.
+```
+
+---
+
+## 🎥 Demonstração
+
+### 🌐 Aplicação Web
+
+Abaixo estão as capturas de tela das principais seções do portfólio em funcionamento:
+
+| Página | Captura de Tela |
+| :---: | :---: |
+| **Sobre Mim (PT/EN & Cortina Cênica)** | **Linha do Tempo de Projetos** |
+| <img src="./portfolio-tulio/public/prints/sobre.png" alt="Tela Sobre Mim" width="380px"> | <img src="./portfolio-tulio/public/prints/projetos.png" alt="Tela Projetos" width="380px"> |
+| **Experiências & Trajetória** | **Contato & Formulário** |
+| <img src="./portfolio-tulio/public/prints/experiencias.png" alt="Tela Experiencias" width="380px"> | <img src="./portfolio-tulio/public/prints/contato.png" alt="Tela Contato" width="380px"> |
+
+---
+
+## 🔗 Documentações Utilizadas
+
+* 📖 **React:** [Documentação Oficial do React](https://react.dev/)
+* 📖 **Vite:** [Guia de Configuração do Vite](https://vite.dev/)
+* 📖 **Tailwind CSS:** [Documentação Oficial do Tailwind CSS](https://tailwindcss.com/docs)
+* 📖 **React Router:** [Documentação do React Router](https://reactrouter.com/)
+* 📖 **Lucide Icons:** [Catálogo de Ícones Lucide](https://lucide.dev/)
+
+---
+
+## 👤 Autor
+
+| 👤 Nome | :octocat: GitHub | 💼 LinkedIn | 📤 E-mail |
+| :--- | :---: | :---: | :---: |
+| **Túlio Furst Akar** | [@TulioFurst](https://github.com/TulioFurst) | [LinkedIn](https://www.linkedin.com) | [takar@sga.pucminas.br](mailto:takar@sga.pucminas.br) |
+
+---
+
+## 🙏 Agradecimentos
+
+* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) — Pelo suporte acadêmico e incentivo às boas práticas de desenvolvimento de software.
+* **Prof. Rommel Vieira Carneiro** — Pelas orientações e acompanhamento na disciplina de *Desenvolvimento e Integração de Aplicações Web*.
+* [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) — Pela disponibilização do template de documentação utilizado neste repositório.
+
+---
+
+## 📄 Licença
+
+Este projeto é distribuído sob a **Licença MIT**.
