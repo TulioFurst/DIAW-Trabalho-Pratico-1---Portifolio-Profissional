@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Mail, MessageSquare, Send, CheckCircle2, AlertCircle, ExternalLink } from 'lucide-react';
 
 export default function Contato() {
-  
-  const SEU_EMAIL = 'takar@sga.pucminas.com';
+  const SEU_EMAIL = 'takar@sga.pucminas.br';
 
   const [formData, setFormData] = useState({
     nome: '',
@@ -11,7 +10,7 @@ export default function Contato() {
     mensagem: '',
   });
 
-  const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'success' | 'error'
+  const [status, setStatus] = useState('idle');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -32,7 +31,7 @@ export default function Contato() {
           name: formData.nome,
           email: formData.email,
           message: formData.mensagem,
-          _subject: `Novo contato pelo Portfólio - ${formData.nome}`,
+          _subject: `Novo contato pelo Portfólio Tui.dev - ${formData.nome}`,
         }),
       });
 
@@ -52,16 +51,16 @@ export default function Contato() {
       name: 'E-mail Direto',
       handle: SEU_EMAIL,
       href: `mailto:${SEU_EMAIL}`,
-      color: 'hover:border-spotlight-purple/60 hover:text-spotlight-purple',
-      icon: <Mail className="w-6 h-6 text-spotlight-purple" />,
+      color: 'hover:border-pride-mint/60 hover:text-pride-mint',
+      icon: <Mail className="w-6 h-6 text-pride-mint" />,
     },
     {
       name: 'GitHub',
-      handle: 'github.com/seu-usuario',
-      href: 'https://github.com',
-      color: 'hover:border-white/50 hover:text-white',
+      handle: 'github.com/TulioFurst',
+      href: 'https://github.com/TulioFurst',
+      color: 'hover:border-pride-ice/60 hover:text-pride-ice',
       icon: (
-        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-pride-ice" fill="currentColor" viewBox="0 0 24 24">
           <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
         </svg>
       ),
@@ -70,9 +69,9 @@ export default function Contato() {
       name: 'LinkedIn',
       handle: 'Conectar no LinkedIn',
       href: 'https://www.linkedin.com',
-      color: 'hover:border-spotlight-cyan/60 hover:text-spotlight-cyan',
+      color: 'hover:border-pride-sky/60 hover:text-pride-sky',
       icon: (
-        <svg className="w-6 h-6 text-spotlight-cyan" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-pride-sky" fill="currentColor" viewBox="0 0 24 24">
           <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
         </svg>
       ),
@@ -81,17 +80,16 @@ export default function Contato() {
       name: 'WhatsApp / Comunidade',
       handle: 'Mensagem rápida',
       href: 'https://wa.me/',
-      color: 'hover:border-spotlight-amber/60 hover:text-spotlight-amber',
-      icon: <MessageSquare className="w-6 h-6 text-spotlight-amber" />,
+      color: 'hover:border-pride-indigo/60 hover:text-pride-indigo',
+      icon: <MessageSquare className="w-6 h-6 text-pride-indigo" />,
     },
   ];
 
   return (
     <div className="space-y-10">
-      {/* Cabeçalho */}
       <div className="space-y-3">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-          Vamos <span className="text-spotlight-purple">Conversar?</span>
+          Vamos <span className="text-pride-mint">Conversar?</span>
         </h1>
         <p className="text-gray-400 max-w-2xl">
           Tem alguma oportunidade, ideia de projeto ou quer trocar uma ideia sobre desenvolvimento e interfaces? Escolha um canal abaixo ou envie um e-mail direto pelo formulário.
@@ -99,7 +97,6 @@ export default function Contato() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-        {/* Coluna da Esquerda: Ícones Clicáveis */}
         <div className="lg:col-span-2 space-y-4">
           <h2 className="text-lg font-bold text-white mb-2">Canais & Redes</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
@@ -126,7 +123,6 @@ export default function Contato() {
           </div>
         </div>
 
-        {/* Coluna da Direita: Formulário com Envio por E-mail */}
         <div className="lg:col-span-3">
           <div className="bg-stage-surface border border-stage-border rounded-2xl p-6 sm:p-8 shadow-lg">
             <h2 className="text-lg font-bold text-white mb-6">Envie uma mensagem direta</h2>
@@ -144,7 +140,7 @@ export default function Contato() {
                   value={formData.nome}
                   onChange={handleChange}
                   placeholder="Ex: Ana Silva"
-                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-spotlight-purple transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-pride-mint transition-colors"
                 />
               </div>
 
@@ -160,7 +156,7 @@ export default function Contato() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="ana@exemplo.com"
-                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-spotlight-purple transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-pride-mint transition-colors"
                 />
               </div>
 
@@ -176,14 +172,14 @@ export default function Contato() {
                   value={formData.mensagem}
                   onChange={handleChange}
                   placeholder="Escreva sua mensagem aqui..."
-                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-spotlight-purple transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-stage-bg border border-stage-border text-white placeholder-gray-500 focus:outline-none focus:border-pride-mint transition-colors resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-spotlight-purple hover:bg-purple-600 disabled:opacity-50 text-white font-semibold transition-all shadow-[0_0_20px_rgba(139,92,246,0.3)]"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-pride-emerald via-pride-mint to-pride-sky hover:opacity-90 disabled:opacity-50 text-stage-bg font-bold transition-all shadow-[0_0_20px_rgba(38,206,170,0.25)]"
               >
                 {status === 'loading' ? (
                   <span>Enviando...</span>
@@ -195,7 +191,6 @@ export default function Contato() {
                 )}
               </button>
 
-              {/* Feedback de Sucesso ou Erro */}
               {status === 'success' && (
                 <div className="flex items-center gap-2 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm">
                   <CheckCircle2 className="w-5 h-5 shrink-0" />

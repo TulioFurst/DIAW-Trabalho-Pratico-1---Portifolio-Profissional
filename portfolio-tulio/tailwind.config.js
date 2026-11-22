@@ -7,16 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Estética de palco/estúdio escuro e iluminação cênica
+        // Fundo escuro profundo com subtom azulado/esverdeado sutil
         stage: {
-          bg: '#0B0C10',       // Preto profundo (coxia/estúdio)
-          surface: '#14161F',  // Cartões e superfícies
-          border: '#23263A',   // Bordas sutis
+          bg: '#070D12',       // Fundo principal (Abismo/Noturno)
+          surface: '#0E1720',  // Cartões e superfícies
+          border: '#1B2B3A',   // Bordas sutis
         },
-        spotlight: {
-          purple: '#8B5CF6',   // Luz cênica principal (Violeta)
-          amber: '#F59E0B',    // Luz quente de destaque (Âmbar)
-          cyan: '#06B6D4',     // Detalhe tech/código
+        // Paleta inspirada na bandeira gay (Esmeralda -> Turquesa/Menta -> Azul Índigo)
+        pride: {
+          emerald: '#078D70',  // Verde-esmeralda profundo
+          mint: '#26CEAA',     // Verde-menta / Turquesa luminoso (Destaque principal)
+          ice: '#98E8C1',      // Menta claro (Brilho suave)
+          sky: '#7BADE2',      // Azul celeste
+          indigo: '#5049CC',   // Azul índigo vibrante (Destaque secundário)
         }
       },
       fontFamily: {

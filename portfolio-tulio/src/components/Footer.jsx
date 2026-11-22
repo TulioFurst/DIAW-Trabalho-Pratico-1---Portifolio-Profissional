@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="border-t border-stage-border bg-stage-surface/50 mt-auto">
       <div className="max-w-5xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Túlio. Desenvolvido com React & Vite.
+          © {new Date().getFullYear()} <span className="text-gray-200 font-medium">Tui.dev</span> • Desenvolvido com React & Vite.
         </p>
         <div className="flex items-center gap-4 text-gray-400">
           <a
-            href="https://github.com"
+            href="https://github.com/TulioFurst"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-spotlight-purple transition-colors"
+            className="hover:text-pride-mint transition-colors"
             aria-label="GitHub"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -20,10 +20,10 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-spotlight-purple transition-colors"
+            className="hover:text-pride-sky transition-colors"
             aria-label="LinkedIn"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -31,8 +31,8 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:takar@sga.pucminas.com"
-            className="hover:text-spotlight-purple transition-colors"
+            href="mailto:takar@sga.pucminas.br"
+            className="hover:text-pride-indigo transition-colors"
             aria-label="E-mail"
           >
             <Mail className="w-5 h-5" />

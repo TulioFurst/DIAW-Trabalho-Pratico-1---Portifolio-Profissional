@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-stage-bg text-gray-100 antialiased selection:bg-spotlight-purple selection:text-white;
+    @apply bg-stage-bg text-gray-100 antialiased selection:bg-pride-mint selection:text-stage-bg;
   }
 }

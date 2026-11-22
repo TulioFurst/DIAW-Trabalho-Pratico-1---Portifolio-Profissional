@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Terminal, Sparkles } from 'lucide-react';
+import { Menu, X, Terminal } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,21 +15,21 @@ export default function Navbar() {
   const linkClass = ({ isActive }) =>
     `px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
       isActive
-        ? 'bg-spotlight-purple/20 text-spotlight-purple border border-spotlight-purple/40 shadow-[0_0_15px_rgba(139,92,246,0.2)]'
+        ? 'bg-pride-mint/15 text-pride-mint border border-pride-mint/40 shadow-[0_0_15px_rgba(38,206,170,0.2)]'
         : 'text-gray-300 hover:text-white hover:bg-stage-surface'
     }`;
 
   return (
-    <nav className="sticky top-0 z-50 bg-stage-bg/80 backdrop-blur-md border-b border-stage-border">
+    <nav className="sticky top-0 z-50 bg-stage-bg/85 backdrop-blur-md border-b border-stage-border">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo / Assinatura */}
-          <NavLink to="/" className="flex items-center gap-2 group">
-            <div className="p-2 rounded-lg bg-stage-surface border border-stage-border group-hover:border-spotlight-purple transition-colors">
-              <Terminal className="w-5 h-5 text-spotlight-purple" />
+          {/* Logo Tui.dev */}
+          <NavLink to="/" className="flex items-center gap-2.5 group">
+            <div className="p-2 rounded-lg bg-stage-surface border border-stage-border group-hover:border-pride-mint transition-colors">
+              <Terminal className="w-5 h-5 text-pride-mint" />
             </div>
             <span className="font-bold text-lg tracking-tight text-white">
-              Túlio<span className="text-spotlight-purple">.dev</span>
+              Tui<span className="text-pride-mint">.dev</span>
             </span>
           </NavLink>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `block px-3 py-2 rounded-md text-base font-medium ${
                   isActive
-                    ? 'bg-spotlight-purple/20 text-spotlight-purple'
+                    ? 'bg-pride-mint/15 text-pride-mint'
                     : 'text-gray-300 hover:bg-stage-bg hover:text-white'
                 }`
               }

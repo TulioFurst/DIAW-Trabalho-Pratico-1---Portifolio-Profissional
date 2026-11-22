@@ -6,10 +6,10 @@ export default function Experiencias() {
       type: 'academic',
       role: 'Graduando em Engenharia de Software',
       organization: 'PUC Minas (Pontifícia Universidade Católica de Minas Gerais)',
-      period: '2026 — Atual (Transferência de Ciência da Computação)',
+      period: '2026 — Atual',
       description:
-        'Desenvolvimento de sistemas web, engenharia de requisitos, interação humano-computador (IHC) e arquitetura de software com foco em metodologias ágeis.',
-      tags: ['Engenharia de Software', 'Desenvolvimento Web', 'IHC', 'Git'],
+        'Desenvolvimento de sistemas web, engenharia de requisitos, interação humano-computador (IHC) e arquitetura de software com foco em metodologias ágeis e qualidade de interface.',
+      tags: ['Engenharia de Software', 'Desenvolvimento Web', 'IHC', 'React'],
     },
     {
       type: 'extension',
@@ -19,6 +19,33 @@ export default function Experiencias() {
       description:
         'Atuação em iniciativa de extensão voltada à aplicação prática de tecnologia e inclusão digital na comunidade escolar, exercitando levantamento de demandas e comunicação.',
       tags: ['Extensão Universitária', 'Impacto Social', 'Comunicação'],
+    },
+    {
+      type: 'academic',
+      role: 'Bacharelado em Ciência da Computação (Base Acadêmica)',
+      organization: 'PUC Minas (Pontifícia Universidade Católica de Minas Gerais)',
+      period: '2023 — 2026',
+      description:
+        'Formação inicial em algoritmos, estruturas de dados, programação modular, arquitetura de computadores e fundamentos da computação antes da migração para Engenharia de Software.',
+      tags: ['Algoritmos', 'Estruturas de Dados', 'Lógica de Programação', 'SQL'],
+    },
+    {
+      type: 'extension',
+      role: 'Representante / Monitor do Curso na Mostra de Cursos',
+      organization: 'PUC Minas — Ciência da Computação',
+      period: '2024',
+      description:
+        'Atuação na recepção de estudantes e visitantes no estande da graduação durante a Mostra de Cursos da universidade, apresentando a grade curricular, projetos acadêmicos e tirando dúvidas sobre a área de tecnologia.',
+      tags: ['Comunicação', 'Evento Acadêmico', 'Divulgação Científica'],
+    },
+    {
+      type: 'academic',
+      role: 'Monitor Acadêmico — Algoritmos e Estruturas de Dados I (AEDS I)',
+      organization: 'PUC Minas — Departamento de Ciência da Computação',
+      period: '2024/1',
+      description:
+        'Apoio pedagógico aos estudantes da disciplina, auxiliando na resolução de exercícios de lógica, depuração de código, estruturas de dados fundamentais e boas práticas de programação.',
+      tags: ['AEDS I', 'Algoritmos', 'Estruturas de Dados', 'Didática'],
     },
     {
       type: 'work',
@@ -44,11 +71,11 @@ export default function Experiencias() {
     switch (type) {
       case 'academic':
       case 'education':
-        return <GraduationCap className="w-5 h-5 text-spotlight-purple" />;
+        return <GraduationCap className="w-5 h-5 text-pride-mint" />;
       case 'extension':
-        return <Sparkles className="w-5 h-5 text-spotlight-amber" />;
+        return <Sparkles className="w-5 h-5 text-pride-sky" />;
       default:
-        return <Briefcase className="w-5 h-5 text-spotlight-cyan" />;
+        return <Briefcase className="w-5 h-5 text-pride-indigo" />;
     }
   };
 
@@ -56,10 +83,10 @@ export default function Experiencias() {
     <div className="space-y-10">
       <div className="space-y-3">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-          Experiências & <span className="text-spotlight-purple">Trajetória</span>
+          Experiências & <span className="text-pride-mint">Trajetória</span>
         </h1>
         <p className="text-gray-400 max-w-2xl">
-          Vivências acadêmicas, projetos de extensão, produção digital e formação multidisciplinar que moldam minha atuação na tecnologia.
+          Vivências acadêmicas, monitorias, eventos universitários, produção digital e formação multidisciplinar que moldam minha atuação na tecnologia.
         </p>
       </div>
 
@@ -67,7 +94,7 @@ export default function Experiencias() {
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="bg-stage-surface border border-stage-border rounded-2xl p-6 hover:border-spotlight-purple/40 transition-all duration-300"
+            className="bg-stage-surface border border-stage-border rounded-2xl p-6 hover:border-pride-mint/40 transition-all duration-300"
           >
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
               <div className="flex items-start gap-4">
@@ -76,14 +103,14 @@ export default function Experiencias() {
                 </div>
                 <div className="space-y-1.5">
                   <h2 className="text-xl font-bold text-white">{exp.role}</h2>
-                  <p className="text-sm font-medium text-spotlight-purple">
+                  <p className="text-sm font-medium text-pride-mint">
                     {exp.organization}
                   </p>
                 </div>
               </div>
 
               <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-300 bg-stage-bg px-3 py-1.5 rounded-lg border border-stage-border self-start shrink-0">
-                <Calendar className="w-3.5 h-3.5 text-spotlight-amber" />
+                <Calendar className="w-3.5 h-3.5 text-pride-sky" />
                 {exp.period}
               </span>
             </div>
